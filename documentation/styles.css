@@ -1,0 +1,9 @@
+.navbar img {
+  height: 100%;
+  width: 200px;
+}
+
+main {
+  background-image: url("./assets/houses.png");
+  color: white;
+}
