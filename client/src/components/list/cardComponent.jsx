@@ -1,6 +1,7 @@
-import React from "react";
-
-export const CardComponent = ({ house }) => {
+import React, { useState } from "react";
+import { ModalComponent } from "../modal/modalComponent";
+export const CardComponent = ({ houseProp }) => {
+  const [house, setHouse] = useState(houseProp);
   return (
     <div className="card">
       <a className="img-card" href="#">
@@ -20,6 +21,7 @@ export const CardComponent = ({ house }) => {
           {" "}
           More Info{" "}
         </a>
+        <ModalComponent houseProp={house} />
       </div>
     </div>
   );

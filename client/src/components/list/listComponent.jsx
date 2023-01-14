@@ -35,7 +35,7 @@ export const ListComponent = () => {
               {houses.map((house) => {
                 return (
                   <div className="col-xs-12 col-sm-4" key={house.id}>
-                    <CardComponent house={house} />
+                    <CardComponent houseProp={house} />
                   </div>
                 );
               })}
