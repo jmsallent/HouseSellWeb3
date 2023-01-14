@@ -11,115 +11,158 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./header.css" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./hero.css" />
+    <link rel="stylesheet" href="./card.css" />
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-light bg-light">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Buy</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Rent</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Sell</a>
-          </li>
-        </ul>
-        <img src="./assets/logo.svg" class="img-fluid" alt="" />
-        <form class="form-inline my-2 my-lg-0">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Connect Wallet
+    <div class="header-dark">
+      <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+        <div class="container">
+          ><button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navcol-1"
+          >
+            <span class="sr-only">Toggle navigation</span
+            ><span class="navbar-toggler-icon"></span>
           </button>
-        </form>
-      </nav>
-    </div>
-    <main>
-      <div class="container py-5">
-        <div class="text-center">
-          <h2>Search it. Explore it. Buy it.</h2>
-          <div class="input-group mb-3">
-            <input
-              type="text"
-              class="form-control"
-              aria-label="Default"
-              aria-describedby="inputGroup-sizing-default"
-            />
+          <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+            <a class="navbar-brand" href="#"
+              ><img src="./assets/logo.svg" class="img-fluid" alt=""
+            /></a>
+            <form class="form-inline mr-auto" target="_self">
+              <div class="form-group">
+                <label for="search-field"><i class="fa fa-search"></i></label
+                ><input
+                  class="form-control search-field"
+                  type="search"
+                  name="search"
+                  id="search-field"
+                />
+              </div>
+            </form>
+            <div class="mr-auto">
+              <a class="btn btn-primary action-button" role="button" href="#"
+                >Connect Wallet</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </main>
+      </nav>
+    </div>
+
     <section>
-      <div class="container py-5">
-        <h2>Houses for You</h2>
-        <hr />
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="./assets/houses.png"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+      <header id="header">
+        <!-- Hero 1 - HCF Bootstrap 5 Component -->
+        <section
+          class="px-5 py-6 py-xxl-10 hcf-bp-center hcf-bs-cover hcf-overlay hcf-transform"
+        >
+          <div class="container">
+            <div class="row justify-content-md-center">
+              <div
+                class="col-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 text-center text-white"
+              >
+                <h1 class="display-3 fw-bold mb-3">
+                  Search it. Explore it. Buy it.
+                </h1>
+
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                  <div class="input-group mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-label="Default"
+                      aria-describedby="inputGroup-sizing-default"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="./assets/houses.png"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        </section>
+      </header>
+    </section>
+    <section class="wrapper">
+      <div class="container-fostrap">
+        <div>
+          <h1 class="heading">Houses for You</h1>
+          <hr />
+        </div>
+        <div class="content">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-4">
+                <div class="card">
+                  <a class="img-card" href="#">
+                    <img src="./assets/houses.png" />
+                  </a>
+                  <div class="card-content">
+                    <h4 class="card-title">
+                      <a href="#">Card title</a>
+                    </h4>
+                    <p class="">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-read-more">
+                    <a href="#" class="btn btn-link btn-block"> More Info </a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="./assets/houses.png"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="col-xs-12 col-sm-4">
+                <div class="card">
+                  <a class="img-card" href="#">
+                    <img src="./assets/houses.png" />
+                  </a>
+                  <div class="card-content">
+                    <h4 class="card-title">
+                      <a href="#">Card title</a>
+                    </h4>
+                    <p class="">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-read-more">
+                    <a href="#" class="btn btn-link btn-block"> More Info </a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src="./assets/houses.png"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="col-xs-12 col-sm-4">
+                <div class="card">
+                  <a class="img-card" href="#">
+                    <img src="./assets/houses.png" />
+                  </a>
+                  <div class="card-content">
+                    <h4 class="card-title">
+                      <a href="#">Card title</a>
+                    </h4>
+                    <p class="">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <div class="card-read-more">
+                    <a href="#" class="btn btn-link btn-block"> More Info </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
